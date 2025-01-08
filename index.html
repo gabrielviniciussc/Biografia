@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thaylize Sherliane Silva Santos</title>
+    <style>
+    /* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #095301; /* Verde mais escuro no fundo */
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 100;
+    border-bottom: 5px solid #fff;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+header h1:hover {
+    transform: scale(1.05);
+    color: #66bb6a;
+}
+
+/* Navegação */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    color: #66bb6a; /* Verde mais claro quando passar o mouse */
+    transform: translateY(-3px);
+}
+
+/* Main */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinhando à esquerda */
+    padding: 60px 20px;
+    gap: 60px;
+    margin-top: 80px; /* Garantindo que o conteúdo fique abaixo do cabeçalho */
+}
+
+/* Quadradinhos estilizados */
+.content,
+.realizacoes,
+.contato {
+    max-width: 90%;
+    text-align: left;
+    background-color: #1a1a1a;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    margin-left: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content:hover,
+.realizacoes:hover,
+.contato:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Borda colorida para as seções */
+.content {
+    border: 2px solid #003366; /* Azul escuro para a borda da seção 'Sobre Thaylize Santos' */
+}
+
+.realizacoes {
+    border: 2px solid #FFA500; /* Laranja para a borda da seção 'Realizações' */
+}
+
+.contato {
+    border: 2px solid #FF0000; /* Vermelho para a borda da seção 'Contato' */
+}
+
+/* Títulos */
+.content h2,
+.realizacoes h3,
+.contato h3 {
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+
+.content h2 {
+    font-size: 2.8rem;
+    color: #003366; /* Azul escuro para o título */
+}
+
+.realizacoes h3 {
+    font-size: 2.5rem;
+    color: #FFA500; /* Laranja para o título */
+}
+
+.contato h3 {
+    font-size: 2.5rem;
+    color: #FF0000; /* Vermelho para o título */
+}
+
+/* Texto */
+.content p,
+.realizacoes ul,
+.contato p {
+    font-size: 1.3rem;
+    color: #ccc;
+    line-height: 1.9;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.realizacoes ul {
+    list-style-type: disc;
+    padding-left: 25px;
+}
+
+.realizacoes ul li {
+    margin-bottom: 12px;
+}
+
+/* Imagem */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.image-container img {
+    width: 30%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 15px;
+    object-fit: contain;
+    border: 5px solid #ffffff; /* Nova cor da borda (laranja suave) */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Redes Sociais */
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 100%;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.social-icons a:hover {
+    transform: translateY(-5px);
+}
+
+/* Rodapé */
+footer {
+    background-color: #160f01;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 0.9rem;
+    color: #ccc;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Thaylize Sherliane Silva Santos</h1>
+        <nav>
+            <a href="#sobre-thaylize">Sobre</a>
+            <a href="#realizacoes">Realizações</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="image-container">
+            <img src="img/thaylize.jpg" alt="Foto de Thaylize Sherliane Silva Santos no IFCE">
+        </div>
+
+        <div class="content" id="sobre-thaylize">
+            <h2>Sobre Thaylize Santos</h2>
+            <p>Thaylize Sherliane Silva Santos nasceu em 4 de maio de 2007, em Natal, mas cresceu em Santana do Matos. Aos 11 anos, se mudou para Natal, superando desafios pessoais que a ajudaram a amadurecer.</p>
+            <p>Em 2022, ela se mudou para Maranguape com sua avó e passou a viver com o pai. Atualmente, é estudante no Instituto Federal do Ceará, campus Maranguape, onde descobriu sua paixão por tecnologia.</p>
+            <p>Seu maior objetivo é se tornar engenheira de software, com foco em Inteligência Artificial, utilizando seus conhecimentos para criar soluções inovadoras e transformar o mundo.</p>
+        </div>
+        
+
+        <div class="realizacoes" id="realizacoes">
+            <h3>Realizações</h3>
+            <ul>
+                <li>Medalha de destaque acadêmico aos 11 e 12 anos, reconhecida como a melhor aluna da turma.</li>
+                <li>Aprovações simultâneas no Instituto Federal do Ceará e no Colégio Militar de Maracanaú aos 15 anos.</li>
+                <li>Fez 4 anos de dança na Casa de Arte de Santana do Matos. Desde pequena, sempre foi uma grande amante da dança.</li>
+                <li>Grande jogadora de vôlei, se consagrando como campeã invicta da Copa Anchieta em 2024 pelo IFCE Campus Maranguape.</li>
+                <li>Participação em projetos, sendo destaque na Olimpíada Brasileira de Tecnologia - OBT.</li>
+            </ul>
+        </div>
+
+        <div class="contato" id="contato">
+            <h3>Contato</h3>
+            <p>Para entrar em contato com Thaylize Santos ou conhecer mais sobre sua trajetória, clique nos ícones abaixo e acesse suas redes sociais</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/thaylizesantos?igsh=MTZrYTd0YTJjdjU3Mg==" target="_blank">
+                    <img src="img/instagram.png" alt="Instagram">
+                </a>
+                <a href="https://github.com/thaylizesant0s" target="_blank">
+                    <img src="img/github.jpg" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/thaylize-santos-98ab93319?trk=contact-info" target="_blank">
+                    <img src="img/linkedin.png" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Thaylize Sherliane Silva Santos.</p>
+    </footer>
+</body>
+</html>
